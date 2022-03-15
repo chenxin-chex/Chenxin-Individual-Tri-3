@@ -3,6 +3,9 @@
 ### [Replit Link](https://replit.com/@chenxinNi/Chenxin-Individual-Tri-3#Main.java)
 Showcases my replit work from Tech Talks and projects assigned by OO
 
+* TOC
+{:toc}
+
 ## Week 0 (Data Structures)
 ### [Week 0 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/7)
 **Challenge 1 (in [Main.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Main.java)):** Used Hashmap data structure in order to dynamically create and store options
