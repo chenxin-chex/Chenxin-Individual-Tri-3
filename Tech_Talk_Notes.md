@@ -18,7 +18,11 @@ Linked lists, queus, stacks are fundamental data structures. Implements ...
 **Linked lists:** Queus has a linked list. Data is the objects, the next node would be the next object. 
 ![image](https://user-images.githubusercontent.com/55467785/158439605-e4d6c6bf-2501-410b-985a-d7ef800e751a.png)
 
-
+-------------------------------------------
+### Plans
+Potential questions: How are linked lists related to queus and stacks? What is the difference between hashmaps and linked lists?
+1. Understand how queus use FIFO to add/delete objects
+2. Learn how to use for each loops as a iterable
 
 ## TT0 (Data Structures)
 ### Paradigms
@@ -28,3 +32,10 @@ Paradigms are a strategy to be followed for writing software applications
 
 ### Data Structures
 Some common data structures that java uses to store information include: Array lists, hashmaps, and algorithms (such as recursion).
+
+---------------------------------
+### Plans
+Potential questions: Why do we not use imperative paradigms in java? What is difference between dictionaries and hashmaps?
+1. Figure out how to use hashmaps in menu
+2. Figure out how to return a 2d array as a String
+    - Hint: "/n" is a line break in a string
