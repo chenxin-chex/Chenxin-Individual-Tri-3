@@ -3,7 +3,8 @@
 ### [Replit Link](https://replit.com/@chenxinNi/Chenxin-Individual-Tri-3#Main.java)
 Showcases my replit work from Tech Talks and projects assigned by OO
 
-* TOC
+**Table of Contents**
+1. TOC
 {:toc}
 
 ## Week 0 (Data Structures)
