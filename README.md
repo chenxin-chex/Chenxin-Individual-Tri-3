@@ -4,7 +4,7 @@
 Showcases my replit work from Tech Talks and projects assigned by OO
 
 **Table of Contents**
-1. TOC
+* TOC
 {:toc}
 
 ## Week 0 (Data Structures)
