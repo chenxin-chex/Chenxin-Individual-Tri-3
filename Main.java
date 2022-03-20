@@ -20,8 +20,9 @@ class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Map<Integer, Main> menu = new HashMap<>();
-    menu.put(0, new Main("Int By Reference", () -> IntByReference.main(null)));
-    menu.put(1, new Main("Matrix", () -> Matrix.main(null)));
+    menu.put(1, new Main("Int By Reference", () -> IntByReference.main(null)));
+    menu.put(2, new Main("Matrix", () -> Matrix.main(null)));
+    menu.put(3, new Main("Queue", () -> QueueTester.main(null)));
 
     System.out.println("Menu:");
     for (Map.Entry<Integer, Main> pair : menu.entrySet()) {
@@ -30,9 +31,12 @@ class Main {
     
     int input = sc.nextInt();
     try {
+      if (input == 0) {
+        return;
+      }
       Main m = menu.get(input);
       m.getReplit().run();
-      }
+    }
     catch(Exception e) {
       System.out.println("Please enter a number listed in the menu.");
     }
