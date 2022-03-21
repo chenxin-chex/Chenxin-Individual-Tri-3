@@ -23,6 +23,7 @@ class Main {
     menu.put(1, new Main("Int By Reference", () -> IntByReference.main(null)));
     menu.put(2, new Main("Matrix", () -> Matrix.main(null)));
     menu.put(3, new Main("Queue", () -> QueueTester.main(null)));
+    menu.put(4, new Main("Merge Queue", () -> Merge.main(null)));
 
     System.out.println("Menu:");
     for (Map.Entry<Integer, Main> pair : menu.entrySet()) {
