@@ -1,6 +1,5 @@
 
 import java.util.Iterator;
-import java.util.*;
 
 /**
  * Queue: custom implementation

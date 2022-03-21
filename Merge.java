@@ -1,9 +1,8 @@
-import java.util.*;
-
 public class Merge<T> {
   private Queue<T> queue1 = new Queue<T>();
   private Queue<T> queue2 = new Queue<T>();
 
+  // constructor
   public Merge(T[] firstList, T[] secList) {
     for (T data : firstList) {
       queue1.add(data);
@@ -14,6 +13,7 @@ public class Merge<T> {
     }
   }
 
+  // compares heads of both queues and adds larger to the third queue
   public Queue<T> merged() {
     QueueIterator<T> firstQueue = new QueueIterator<T>(queue1);
     QueueIterator<T> secQueue = new QueueIterator<T>(queue2);
@@ -36,7 +36,7 @@ public class Merge<T> {
   }
 
   
-  
+  // tester main class
   public static void main(String args[]) {
     Integer[] firstlist = new Integer[] { 1, 4, 5, 8};
     Integer[] seclist = new Integer[] { 2, 3, 6, 7};
@@ -55,8 +55,9 @@ public class Merge<T> {
     System.out.println();
 
     while (answer.hasNext()) {
-      System.out.println(answer.next() + " ");
+      System.out.print(answer.next() + " ");
     }
+    System.out.println();
     
     
   }
