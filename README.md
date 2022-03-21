@@ -8,6 +8,7 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 {:toc}
 
 ## Week 1 (Stacks & Queues)
+### [Week 1 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/25)
 **Challenge 1 (in [Queue.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Queue.java)):** Wrote the delete method for queue by setting new head and connecting tail as node
 ![image](https://user-images.githubusercontent.com/55467785/159210357-d386662c-11a0-422a-8350-f6254b351abb.png)
 
