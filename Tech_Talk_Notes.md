@@ -2,6 +2,29 @@
 
 # Tech Talk Notes
 
+## TT2 (Calculator)
+
+**Calculator class:** inputs a string with integers and operations, returns the product
+ - Hashmap operators to do mathematical functions
+ - Hashmap seperators to seperate functions
+
+1. Tokenization: seperate string into tokens
+2. Put into RPN: put numbers into list and operators into stack depending on precedence, first have to peek (PEMDAS)
+3. If operator in stack has precedence procede to calculate
+4. Calculate: put all numbers in list into stack, when you get an operator, pop 2 numbers from stack and calculate, then push back into stack
+
+
+**toString method:** that has original expression, other expressions, and final result
+ - tokenization: convert String into series of tokens
+ - Reverse polish notation: language that computer understands with stacks
+
+-----------------------------------------------------------------------------------------
+### Plans
+Potential questions: How to print out RPN whilst calculating it
+1. Review Wikipedia page on the Reverse polish notation to understand it
+2. Figure out how seperators are coded in calculator
+3. Code the different parts of calculator
+
 ## TT1 (Linked Lists)
 Linked lists, queus, stacks are fundamental data structures. Implements ...
  - Generic Type T: applicable to different objects. Can use multiple data types without multiple stacks and queus for each
