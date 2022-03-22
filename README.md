@@ -8,16 +8,22 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 {:toc}
 
 ## Week 1 (Stacks & Queues)
+### [Week 1 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/25)
 **Challenge 1 (in [Queue.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Queue.java)):** Wrote the delete method for queue by setting new head and connecting tail as node
 ![image](https://user-images.githubusercontent.com/55467785/159210357-d386662c-11a0-422a-8350-f6254b351abb.png)
 
-Difficulty: printing out the queues so I changed addList and coded deleteList in QueueManager
+Difficulty printing out the queues so I changed addList and coded deleteList in QueueManager
 ![image](https://user-images.githubusercontent.com/55467785/159210432-d663ba19-99bf-444e-8e99-8282b87164a4.png)
 
 **Challenge 2 (in [Merge.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Merge.java)):** Created merge method to combine and sort two queues
 ![image](https://user-images.githubusercontent.com/55467785/159210541-bc82d51d-ffb7-4b70-bdc3-6e977023f36e.png)
 
 Difficulty merging the entire queue because next() method of QueueIterator skipped over data
+
+**Challenge 3 (in [Stack.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Stack.java)):** Created stack class that follows the last in first out principle with methods push and pop
+![image](https://user-images.githubusercontent.com/55467785/159310977-d9a734b7-191a-4739-abbd-c4bc3ac9db84.png)
+
+Difficulty testing the stack to reverse a queue (didn't finish in time)
 
 ## Week 0 (Data Structures)
 ### [Week 0 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/7)
