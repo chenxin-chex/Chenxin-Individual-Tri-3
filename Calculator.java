@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.Math;
 
 public class Calculator {
   private final String expression;
@@ -23,6 +24,7 @@ public class Calculator {
   private final Map<String, Integer> OPERATORS = new HashMap<>();
   {
     // Map<"token", precedence>
+    OPERATORS.put("^", 2);
     OPERATORS.put("*", 3);
     OPERATORS.put("/", 3);
     OPERATORS.put("%", 3);
@@ -116,6 +118,7 @@ public class Calculator {
           case "*":
           case "/":
           case "%":
+          case "^":
             // While stack
             // not empty AND stack top element
             // and is an operator
@@ -145,21 +148,45 @@ public class Calculator {
     Stack calculation = new Stack();
 
     // for loop to process RPN
-    {
+    for (String tokens : reverse_polish) {
       // If the token is a number
-      {
+      if (!isOperator(tokens)) {
         // Push number to stack
+        Double num = Double.parseDouble(tokens);
+        calculation.push(num);
       }
         // else
-      {
+      else {
         // Pop the two top entries
+        Double temp1 = (Double)calculation.pop();
+        Double temp2 = (Double)calculation.pop();
+        Double answer = 0.0;
 
         // Based off of Token operator calculate result
+        if (tokens.equals("^")) {
+          answer = Math.pow(temp2, temp1);
+        }
+        if (tokens.equals("*")) {
+          answer = temp1 * temp2;
+        }
+        if (tokens.equals("/")) {
+          answer = temp2 / temp1;
+        }
+        if (tokens.equals("%")) {
+          answer = temp2 % temp1;
+        }
+        if (tokens.equals("+")) {
+          answer = temp2 + temp1;
+        }
+        if (tokens.equals("-")) {
+          answer = temp2 - temp1;
+        }
 
-        // Push result back onto the stack
+        calculation.push(answer);
       }
     }
         // Pop final result and set as final result for expression
+    result = (Double)calculation.pop();
   }
 
   public String toString() {
@@ -167,6 +194,27 @@ public class Calculator {
             "Tokenized expression: " + this.tokens.toString() + "\n" +
             "Reverse Polish Notation: " +this.reverse_polish.toString() + "\n" +
             "Final result: " + String.format("%.2f", this.result));
+  }
+
+  public static void main(String[] args) {
+    Calculator simpleMath = new Calculator("100 + 200  * 3");
+    System.out.println("Simple Math\n" + simpleMath);
+
+    Calculator parenthesisMath = new Calculator("(100 + 200)  * 3");
+    System.out.println("Parenthesis Math\n" + parenthesisMath);
+
+    Calculator fractionMath = new Calculator("100.2 - 99.3");
+    System.out.println("Fraction Math\n" + fractionMath);
+
+    Calculator allMath = new Calculator("200 % 300 + 5 + 300 / 200 + 1 * 100");
+    System.out.println("All Math\n" + allMath);
+
+    Calculator allMath2 = new Calculator("200 % (300 + 5 + 300) / 200 + 1 * 100");
+    System.out.println("All Math2\n" + allMath2);
+
+    Calculator powerMath = new Calculator("2 ^ 3 * 4");
+    System.out.println("Power Math\n" + powerMath);
+    
   }
   
 }
