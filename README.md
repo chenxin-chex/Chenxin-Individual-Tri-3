@@ -7,6 +7,23 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * TOC
 {:toc}
 
+## Week 2 (Calculator)
+**Challenge 1 (in [Calculator.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Calculator.java)):** Code rpnToResult method to calculate expression from Reverse Polish Notation
+![image](https://user-images.githubusercontent.com/55467785/159758977-cc09ea7e-4cae-46d9-b3b2-93063a072ec1.png)
+
+Used for loop to iterate through rpn, and used if loops to perform operation on the top two entries in stack, then pushed answer back into stack. Only one entry would remain at the end of for loop, which was the final result.
+![image](https://user-images.githubusercontent.com/55467785/159759356-a550a504-c3e9-4ed0-8c1c-c1b97b153ccc.png)
+
+**Challenge 2 (also in [Calculator.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Calculator.java)):** Code for a Power (^) operator. Power operator had more precedence than other operators
+![image](https://user-images.githubusercontent.com/55467785/159759616-504784fc-7ea4-4c40-ba7a-708fc45f1306.png)
+
+Also had to edit tokensToReversePolishNotation and rpnToResult method to include power operator
+
+![image](https://user-images.githubusercontent.com/55467785/159759889-1a74d637-7a70-46bd-a140-8d885de48e4b.png)
+![image](https://user-images.githubusercontent.com/55467785/159759966-f5134614-72aa-479f-9654-83d4014e9848.png)
+
+
+
 ## Week 1 (Stacks & Queues)
 ### [Week 1 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/25)
 **Challenge 1 (in [Queue.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Queue.java)):** Wrote the delete method for queue by setting new head and connecting tail as node
