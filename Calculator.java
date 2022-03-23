@@ -214,6 +214,12 @@ public class Calculator {
 
     Calculator powerMath = new Calculator("2 ^ 3 * 4");
     System.out.println("Power Math\n" + powerMath);
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("What expression would you like to calculate?: ");
+    String original = sc.nextLine();
+    Calculator input = new Calculator(original);
+    System.out.println("Result: " + input);
     
   }
   
