@@ -12,12 +12,11 @@ public class InsertSort extends BaseSort {
 
       while (j >= 0 && unsorted[j] > value) {
         compare++;
-        swap++;
         unsorted[j+1] = unsorted[j];
         j = j - 1;
       }
-
       unsorted[j+1] = value;
+      sort++;
     }
   }
 

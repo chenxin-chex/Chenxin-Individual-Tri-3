@@ -22,7 +22,7 @@ public class BaseSort {
 
   public String toString() {
     String format = "";
-    format += "Count: " + compare;
+    format += "Compare: " + compare;
     format += "\nSwap: " + sort;
     format += "\nTime: " + result;
     format += "\nSorted: ";
