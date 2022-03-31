@@ -7,7 +7,8 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * TOC
 {:toc}
 
-## Week 2 (Calculator)
+## Week 2 (Calculator function)
+### [Week 2 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/31)
 **Challenge 1 (in [Calculator.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Calculator.java)):** Code rpnToResult method to calculate expression from Reverse Polish Notation
 ![image](https://user-images.githubusercontent.com/55467785/159758977-cc09ea7e-4cae-46d9-b3b2-93063a072ec1.png)
 
