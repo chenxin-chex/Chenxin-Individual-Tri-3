@@ -16,6 +16,18 @@ public class BaseSort {
     result = res.getNano();
   }
 
+  public int getCompare() {
+    return compare;
+  }
+
+  public int getSort() {
+    return sort;
+  }
+
+  public int getTime() {
+    return result;
+  }
+
   public void sort() {
     // customize sort method based on type of sort
   }
