@@ -25,6 +25,9 @@ class Main {
     menu.put(3, new Main("Queue", () -> QueueTester.main(null)));
     menu.put(4, new Main("Merge Queue", () -> Merge.main(null)));
     menu.put(5, new Main("Calculator", () -> Calculator.main(null)));
+    menu.put(6, new Main("Bubble Sort", () -> BubbleSort.main(null)));
+    menu.put(7, new Main("Selection Sort", () -> SelectSort.main(null)));
+    menu.put(8, new Main("Insertion Sort", () -> InsertSort.main(null)));
 
     System.out.println("Menu:");
     for (Map.Entry<Integer, Main> pair : menu.entrySet()) {
