@@ -4,6 +4,7 @@ import java.time.*;
 public class MergeSort extends BaseSort {
 
   public MergeSort() {
+    // constructor cannot call super because the sort function has a parameter this time
     this.unsorted = getUnsorted();
     Instant starts = Instant.now();
     sort(unsorted, unsorted.length);
@@ -11,7 +12,8 @@ public class MergeSort extends BaseSort {
     Duration res = Duration.between(starts, stop);
     result = res.getNano();
   }
-
+  
+// splits the array into two parts continuouslly until they can't anymore
   public void sort(int[] a, int n) {
     if (n < 2) {
       return;
@@ -35,6 +37,7 @@ public class MergeSort extends BaseSort {
     
   }
 
+  // recursively compares and sorts the smaller lists together until reach final result, sorted list
   public void mergeS(int[] a, int[] l, int[] r, int left, int right) {
     int i = 0;
     int j = 0;
@@ -42,6 +45,7 @@ public class MergeSort extends BaseSort {
 
     while (i < left && j < right) {
       compare++;
+      // compares the two arrays and sorts them into the bigger, resulting array
       if (l[i] <= r[j]) {
         a[k++] = l[i++];
         sort++;
@@ -52,9 +56,12 @@ public class MergeSort extends BaseSort {
       }
     }
 
+    // put in the rest of the 1st array
     while (i < left) {
       a[k++] = l[i++];
     }
+
+    // put in the rest of the 2nd array
     while (j < right) {
       a[k++] = r[j++];
     }
