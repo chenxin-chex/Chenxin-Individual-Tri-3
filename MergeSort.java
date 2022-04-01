@@ -41,11 +41,14 @@ public class MergeSort extends BaseSort {
     int k = 0;
 
     while (i < left && j < right) {
+      compare++;
       if (l[i] <= r[j]) {
         a[k++] = l[i++];
+        sort++;
       }
       else {
         a[k++] = r[j++];
+        sort++;
       }
     }
 
