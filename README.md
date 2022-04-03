@@ -7,6 +7,12 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * TOC
 {:toc}
 
+## Week 3 (Sort algorithms)
+**Bubble Sort:** Compares adjacent elements and swaps them if they are in the wrong number. Since the code uses two for loops that iterates through the list, big o notation for the worst case scenario would be O(n * n) = O(n^2).
+![image](https://user-images.githubusercontent.com/55467785/161411460-a2048a66-ee22-4fcf-8afb-874bb1434b34.png)
+
+
+
 ## Week 2 (Calculator function)
 ### [Week 2 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/31)
 **Challenge 1 (in [Calculator.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/Calculator.java)):** Code rpnToResult method to calculate expression from Reverse Polish Notation
