@@ -32,9 +32,12 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * Average Time: 581523
 
 **Merge Sort:** Recursively splits the array in two until each array contains one value, then compare and combine the smaller lists together until entire sorted list is recreated. Since the array is first divided then sorted, merge sort is a combination of binary and linear search, so big o notation for the worst case scenario is O(n * log n)
+
 ![image](https://user-images.githubusercontent.com/55467785/161412313-8cb07522-4916-4e2f-b430-db0568720d5a.png)
 
-
+* Average Compare: 7284
+* Average Swap: 7284
+* Average Time: 127009
 
 
 ## Week 2 (Calculator function)
