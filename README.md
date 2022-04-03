@@ -16,9 +16,15 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * Average Time (nanoseconds): 1517102
 
 **Selection Sort:** Splits the list into a sorted array and unsorted array. Each time we iterate through the unsorted array, we find the minimum value and add it to the sorted array. Since in the worst case scenario the code iterates through the array n times (once again two for loops), big o notation is O(n * n) = O(n^2).
+
 ![image](https://user-images.githubusercontent.com/55467785/161411641-f9695d52-b114-4662-b888-c0b6fc2df75b.png)
 
+* Average Compare: 366691
+* Average Swap: 855
+* Average Time: 674975
+
 **Insertion Sort:** Iterates through each element and compares it to the previous values until it is no longer smaller than the previous value. Since in the worst case scenario we iterate through the array n times, big o notation is also O(n * n) = O(n^2).
+
 ![image](https://user-images.githubusercontent.com/55467785/161411896-b155ed06-cd3b-4861-ad45-2603fb9ab1e0.png)
 
 **Merge Sort:** Recursively splits the array in two until each array contains one value, then compare and combine the smaller lists together until entire sorted list is recreated. Since the array is first divided then sorted, merge sort is a combination of binary and linear search, so big o notation for the worst case scenario is O(n * log n)
