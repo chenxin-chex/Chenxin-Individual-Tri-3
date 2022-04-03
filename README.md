@@ -39,6 +39,10 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * Average Swap: 7284
 * Average Time: 127009
 
+**Analytics:** By comparing the compare count, swap count, and time, merge sort is the best algorithm for large data sets because it has the lowest average for all of these statistics. Additionally, as shown by the graph, its big o notation of O(n * log n) is smaller than O(n^2) that the other algorithms have
+
+![image](https://user-images.githubusercontent.com/55467785/161416086-08922050-bf08-4b36-894d-1672fc6ce264.png)
+
 
 ## Week 2 (Calculator function)
 ### [Week 2 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/31)
