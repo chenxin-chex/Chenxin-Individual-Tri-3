@@ -11,6 +11,10 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 **Bubble Sort:** Compares adjacent elements and swaps them if they are in the wrong number. Since the code uses two for loops that iterates through the list, big o notation for the worst case scenario would be O(n * n) = O(n^2).
 ![image](https://user-images.githubusercontent.com/55467785/161411460-a2048a66-ee22-4fcf-8afb-874bb1434b34.png)
 
+* Average Compare: 366800
+* Average Swap: 183895
+* Average Time (nanoseconds): 1517102
+
 **Selection Sort:** Splits the list into a sorted array and unsorted array. Each time we iterate through the unsorted array, we find the minimum value and add it to the sorted array. Since in the worst case scenario the code iterates through the array n times (once again two for loops), big o notation is O(n * n) = O(n^2).
 ![image](https://user-images.githubusercontent.com/55467785/161411641-f9695d52-b114-4662-b888-c0b6fc2df75b.png)
 
