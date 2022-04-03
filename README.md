@@ -17,6 +17,9 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 **Insertion Sort:** Iterates through each element and compares it to the previous values until it is no longer smaller than the previous value. Since in the worst case scenario we iterate through the array n times, big o notation is also O(n * n) = O(n^2).
 ![image](https://user-images.githubusercontent.com/55467785/161411896-b155ed06-cd3b-4861-ad45-2603fb9ab1e0.png)
 
+**Merge Sort:** Recursively splits the array in two until each array contains one value, then compare and combine the smaller lists together until entire sorted list is recreated. Since the array is first divided then sorted, merge sort is a combination of binary and linear search, so big o notation for the worst case scenario is O(n * log n)
+![image](https://user-images.githubusercontent.com/55467785/161412313-8cb07522-4916-4e2f-b430-db0568720d5a.png)
+
 
 
 
