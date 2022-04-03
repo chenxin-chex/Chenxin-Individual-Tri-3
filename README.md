@@ -14,6 +14,8 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 **Selection Sort:** Splits the list into a sorted array and unsorted array. Each time we iterate through the unsorted array, we find the minimum value and add it to the sorted array. Since in the worst case scenario the code iterates through the array n times (once again two for loops), big o notation is O(n * n) = O(n^2).
 ![image](https://user-images.githubusercontent.com/55467785/161411641-f9695d52-b114-4662-b888-c0b6fc2df75b.png)
 
+**Insertion Sort:** Iterates through each element and compares it to the previous values until it is no longer smaller than the previous value. Since in the worst case scenario we iterate through the array n times, big o notation is also O(n * n) = O(n^2).
+![image](https://user-images.githubusercontent.com/55467785/161411896-b155ed06-cd3b-4861-ad45-2603fb9ab1e0.png)
 
 
 
