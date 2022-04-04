@@ -8,14 +8,15 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 {:toc}
 
 ## Week 3 (Sort algorithms)
-**Bubble Sort:** Compares adjacent elements and swaps them if they are in the wrong number. Since the code uses two for loops that iterates through the list, big o notation for the worst case scenario would be O(n * n) = O(n^2).
+### [Week 3 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/34)
+**Bubble Sort (in [BubbleSort.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/BubbleSort.java)):** Compares adjacent elements and swaps them if they are in the wrong number. Since the code uses two for loops that iterates through the list, big o notation for the worst case scenario would be O(n * n) = O(n^2).
 ![image](https://user-images.githubusercontent.com/55467785/161411460-a2048a66-ee22-4fcf-8afb-874bb1434b34.png)
 
 * Average Compare: 366800
 * Average Swap: 183895
 * Average Time (nanoseconds): 1517102
 
-**Selection Sort:** Splits the list into a sorted array and unsorted array. Each time we iterate through the unsorted array, we find the minimum value and add it to the sorted array. Since in the worst case scenario the code iterates through the array n times (once again two for loops), big o notation is O(n * n) = O(n^2).
+**Selection Sort (in [SelectSort.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/SelectSort.java)):** Splits the list into a sorted array and unsorted array. Each time we iterate through the unsorted array, we find the minimum value and add it to the sorted array. Since in the worst case scenario the code iterates through the array n times (once again two for loops), big o notation is O(n * n) = O(n^2).
 
 ![image](https://user-images.githubusercontent.com/55467785/161411641-f9695d52-b114-4662-b888-c0b6fc2df75b.png)
 
@@ -23,7 +24,7 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * Average Swap: 855
 * Average Time: 674975
 
-**Insertion Sort:** Iterates through each element and compares it to the previous values until it is no longer smaller than the previous value. Since in the worst case scenario we iterate through the array n times, big o notation is also O(n * n) = O(n^2).
+**Insertion Sort (in [InsertSort.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/InsertSort.java)):** Iterates through each element and compares it to the previous values until it is no longer smaller than the previous value. Since in the worst case scenario we iterate through the array n times, big o notation is also O(n * n) = O(n^2).
 
 ![image](https://user-images.githubusercontent.com/55467785/161411896-b155ed06-cd3b-4861-ad45-2603fb9ab1e0.png)
 
@@ -31,7 +32,7 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * Average Swap: 184766
 * Average Time: 581523
 
-**Merge Sort:** Recursively splits the array in two until each array contains one value, then compare and combine the smaller lists together until entire sorted list is recreated. Since the array is first divided then sorted, merge sort is a combination of binary and linear search, so big o notation for the worst case scenario is O(n * log n)
+**Merge Sort (in [MergeSort.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/MergeSort.java)):** Recursively splits the array in two until each array contains one value, then compare and combine the smaller lists together until entire sorted list is recreated. Since the array is first divided then sorted, merge sort is a combination of binary and linear search, so big o notation for the worst case scenario is O(n * log n)
 
 ![image](https://user-images.githubusercontent.com/55467785/161412313-8cb07522-4916-4e2f-b430-db0568720d5a.png)
 
