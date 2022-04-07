@@ -3,13 +3,23 @@ import java.io.IOException;
 
 public class Clock {
   private int time;
+  private boolean running;
 
   public Clock() {
     this.time = 0;
+    this.running = true;
   }
 
   public void increment() {
-    time++;
+    this.time++;
+  }
+
+  public void stop() {
+    this.running = false;
+  }
+
+  public boolean isRunning() {
+    return running;
   }
 
   // Combine strings horizontally
@@ -72,7 +82,7 @@ public class Clock {
     return segments;
   }
 
-  // Get the string representation of the digit as a string
+  // Get the string representation of a digit as a string
   public String getSegmentsString(int digit) {
     boolean[] segments = getSegments(digit);
     String[] strings = new String[7];
@@ -100,33 +110,29 @@ public class Clock {
 
   // Print a multidigit number as a string
   public String getNumberString(int time, int num_digits) {
-    int[] digits = new int[num_digits];
     int tmp = time;
+    String s = "";
 
     for (int i = 0; i < num_digits; i++) {
-      digits[i] = tmp % 10;
+      s = combineStrings(getSegmentsString(tmp % 10, s);
+
       tmp /= 10;
     }
     
-    String s = getSegmentsString(digits[num_digits - 1]);
-    for (int i = num_digits - 2; i >= 0; i--) {
-      s = combineStrings(s, getSegmentsString(digits[i]));
-    }
-
     return s;
   }
 
   // String representation of a colon that separates the hours/minutes/seconds
   private static String colon = " \n \n:\n \n \n \n:\n \n ";
 
-  // Print the clock's time in hours/minutes/seconds
+  // Print the clock's time in hh::mm::ss format
   public String toString() {
-    int hours = time / 3600;
-    int minutes = (time / 60) % 60;
-    int seconds = time % 60;
+    int hours = this.time / 3600;
+    int minutes = (this.time / 60) % 60;
+    int seconds = this.time % 60;
 
     String s = "";
-    s = getNumberString(hours, 2);
+    s = combineStrings(s, getNumberString(hours,   2));
     s = combineStrings(s, colon);
     s = combineStrings(s, getNumberString(minutes, 2));
     s = combineStrings(s, colon);
@@ -140,6 +146,10 @@ public class Clock {
 
     new Thread(() -> {
       for (;;) {
+        if (!clock.isRunning()) {
+          return;
+        }
+
         // Clear the screen
         System.out.println("\033c");
 
@@ -160,12 +170,13 @@ public class Clock {
     }).start();
 
     // If 'q' is entered, quit the clock
-    System.out.println("Type 'q' and then enter to quit");
     Scanner stdin = new Scanner(System.in);
 
     for (;;) {
       while (stdin.nextLine().equals("q")) {
-        System.exit(0);
+        clock.stop();
+
+        return;
       }
     }
   }
