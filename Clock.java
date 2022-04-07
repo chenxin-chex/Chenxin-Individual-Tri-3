@@ -103,20 +103,20 @@ public class Clock {
 
   // Print a multidigit number as a string
   public String getNumberString(int time, int num_digits) {
-      int[] digits = new int[num_digits];
-      int tmp = time;
+    int[] digits = new int[num_digits];
+    int tmp = time;
 
-      for (int i = 0; i < num_digits; i++) {
-        digits[i] = tmp % 10;
-        tmp /= 10;
-      }
-      
-      String s = getSegmentsString(digits[num_digits - 1]);
-      for (int i = num_digits - 2; i >= 0; i--) {
-        s = combineStrings(s, getSegmentsString(digits[i]));
-      }
+    for (int i = 0; i < num_digits; i++) {
+      digits[i] = tmp % 10;
+      tmp /= 10;
+    }
+    
+    String s = getSegmentsString(digits[num_digits - 1]);
+    for (int i = num_digits - 2; i >= 0; i--) {
+      s = combineStrings(s, getSegmentsString(digits[i]));
+    }
 
-      return s;
+    return s;
   }
 
   // Print the clock's time in hours/minutes/seconds
