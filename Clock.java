@@ -4,9 +4,6 @@ import java.io.IOException;
 public class Clock {
   private int time;
 
-  // String representation of a colon that separates the hours/minutes/seconds
-  private static String colon = " \n \n:\n \n \n \n:\n \n ";
-
   public Clock() {
     this.time = 0;
   }
@@ -118,6 +115,9 @@ public class Clock {
 
     return s;
   }
+
+  // String representation of a colon that separates the hours/minutes/seconds
+  private static String colon = " \n \n:\n \n \n \n:\n \n ";
 
   // Print the clock's time in hours/minutes/seconds
   public String toString() {
