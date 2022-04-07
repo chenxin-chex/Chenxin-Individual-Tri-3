@@ -20,19 +20,20 @@ class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Map<Integer, Main> menu = new HashMap<>();
-    menu.put(1, new Main("Int By Reference", () -> IntByReference.main(null)));
-    menu.put(2, new Main("Matrix", () -> Matrix.main(null)));
-    menu.put(3, new Main("Queue", () -> QueueTester.main(null)));
-    menu.put(4, new Main("Merge Queue", () -> Merge.main(null)));
-    menu.put(5, new Main("Calculator", () -> Calculator.main(null)));
-    menu.put(6, new Main("Bubble Sort", () -> BubbleSort.main(null)));
-    menu.put(7, new Main("Selection Sort", () -> SelectSort.main(null)));
-    menu.put(8, new Main("Insertion Sort", () -> InsertSort.main(null)));
-    menu.put(9, new Main("Merge Sort", () -> MergeSort.main(null)));
+    menu.put(1,  new Main("Int By Reference", () -> IntByReference.main(null)));
+    menu.put(2,  new Main("Matrix", () -> Matrix.main(null)));
+    menu.put(3,  new Main("Queue", () -> QueueTester.main(null)));
+    menu.put(4,  new Main("Merge Queue", () -> Merge.main(null)));
+    menu.put(5,  new Main("Calculator", () -> Calculator.main(null)));
+    menu.put(6,  new Main("Bubble Sort", () -> BubbleSort.main(null)));
+    menu.put(7,  new Main("Selection Sort", () -> SelectSort.main(null)));
+    menu.put(8,  new Main("Insertion Sort", () -> InsertSort.main(null)));
+    menu.put(9,  new Main("Merge Sort", () -> MergeSort.main(null)));
+    menu.put(10, new Main("Clock", () -> Clock.main(null)));
 
     System.out.println("Menu:");
     for (Map.Entry<Integer, Main> pair : menu.entrySet()) {
-      System.out.println(pair.getKey() + " ==> " + pair.getValue().getTitle());
+      System.out.println(String.format("%2d ==> %s", pair.getKey(), pair.getValue().getTitle()));
     }
     
     int input = sc.nextInt();
