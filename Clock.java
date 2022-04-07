@@ -141,7 +141,7 @@ public class Clock {
     new Thread(() -> {
       for (;;) {
         // Clear the screen
-        System.out.println("\033\143");
+        System.out.println("\033c");
 
         // Print out the clock
         System.out.println(clock);
