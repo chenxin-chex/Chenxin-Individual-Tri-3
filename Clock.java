@@ -140,7 +140,12 @@ public class Clock {
 
     new Thread(() -> {
       for (;;) {
-        System.out.println(String.format("\033\143%s", clock));
+        // Clear the screen
+        System.out.println("\033\143");
+
+        // Print out the clock
+        System.out.println(clock);
+
         System.out.println("Press 'q' to quit");
         System.out.print("> ");
 
@@ -154,6 +159,7 @@ public class Clock {
       }
     }).start();
 
+    // If 'q' is entered, quit the clock
     System.out.println("Type 'q' and then enter to quit");
     Scanner stdin = new Scanner(System.in);
 
