@@ -114,7 +114,7 @@ public class Clock {
     String s = "";
 
     for (int i = 0; i < num_digits; i++) {
-      s = combineStrings(getSegmentsString(tmp % 10, s);
+      s = combineStrings(getSegmentsString(tmp % 10), s);
 
       tmp /= 10;
     }
