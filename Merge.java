@@ -20,14 +20,29 @@ public class Merge<T> {
     Queue<T> mergedQueues = new Queue<T>();
 
     while (firstQueue.hasNext() && secQueue.hasNext()) {
-      T first = firstQueue.next();
-      T sec = secQueue.next();
+      T first = firstQueue.getData();
+      T sec = secQueue.getData();
 
       if ((int)first <= (int)sec) {
         mergedQueues.add(first);
+        firstQueue.next();
       }
       else {
         mergedQueues.add(sec);
+        secQueue.next();
+      }
+    }
+
+    if (queue1.getHead() != null) {
+      while (firstQueue.hasNext()) {
+        mergedQueues.add(firstQueue.getData());
+        firstQueue.next();
+      }
+    }
+    else {
+      while (secQueue.hasNext()) {
+        mergedQueues.add(secQueue.getData());
+        secQueue.next();
       }
     }
 

@@ -7,8 +7,22 @@ Showcases my replit work from Tech Talks and projects assigned by OO
 * TOC
 {:toc}
 
+## Week 4 (Cross-over Partner)
+### [Final Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/39)
+
+Challenge was to create a data structure in cross-over partner's repository, [linked here](https://github.com/armarmgc/datastruct-proj)
+
+**POJO Data Structure:** Stands for Plain Old Java Object, which is just a class with constructor and methods. Created a Gravity.java POJO that calculates and returns the force of gravity between Earth and a (user-inputted) planet in our solar system.
+![image](https://user-images.githubusercontent.com/55467785/162374261-5be3295a-05ff-46c4-bc2c-ab53398396d0.png)
+
+**Show runtime: **
+![image](https://user-images.githubusercontent.com/55467785/162374317-359eaa26-df3a-4ee7-a7a3-6f429d54f453.png)
+
+
 ## Week 3 (Sort algorithms)
 ### [Week 3 Review Ticket](https://github.com/dsblack0/stickers_for_charity/issues/34)
+**[Data Spreadsheet](https://docs.google.com/spreadsheets/d/1WAQK8kFYqq1BD5UPX6REAOHmu0bZ_lJX8zf7kJ_QQns/edit?usp=sharing)**
+
 **Bubble Sort (in [BubbleSort.java](https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/blob/main/BubbleSort.java)):** Compares adjacent elements and swaps them if they are in the wrong number. Since the code uses two for loops that iterates through the list, big o notation for the worst case scenario would be O(n * n) = O(n^2).
 ![image](https://user-images.githubusercontent.com/55467785/161411460-a2048a66-ee22-4fcf-8afb-874bb1434b34.png)
 

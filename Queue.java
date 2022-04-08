@@ -1,4 +1,3 @@
-
 import java.util.Iterator;
 
 /**
@@ -88,6 +87,12 @@ class QueueIterator<T> implements Iterator<T> {
     T data = current.getData();
     current = current.getNext();
     return data;
+  }
+
+  // returns current data object
+  public T getData() {
+    T data1 = current.getData();
+    return data1;
   }
 }
 
