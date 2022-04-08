@@ -56,10 +56,9 @@ public class Clock {
                   (digit & 0b1111) == 0b1001 ||
                   (digit & 0b1111) == 0b0101;
 
-    segments[2] = (digit & 0b1100) == 0b0000 ||
-                  (digit & 0b1110) == 0b1000 ||
-                  (digit & 0b1111) == 0b0100 ||
-                  (digit & 0b1111) == 0b0111;
+    segments[2] = (digit & 0b0100) == 0b0000 ||
+                  (digit & 0b0011) == 0b0000 ||
+                  (digit & 0b0011) == 0b0011;
 
     segments[3] = (digit & 0b0111) == 0b0000 ||
                   (digit & 0b1011) == 0b0010;
@@ -69,10 +68,9 @@ public class Clock {
                   (digit & 0b1101) == 0b0100 ||
                   (digit & 0b1111) == 0b0101;
 
-    segments[5] = (digit & 0b1100) == 0b0100 ||
-                  (digit & 0b0111) == 0b0000 ||
-                  (digit & 0b0111) == 0b0001 ||
-                  (digit & 0b1111) == 0b0011;
+    segments[5] = (digit & 0b0001) == 0b0001 ||
+                  (digit & 0b1100) == 0b0100 ||
+                  (digit & 0b0011) == 0b0000;
 
     segments[6] = (digit & 0b0111) == 0b0000 ||
                   (digit & 0b1011) == 0b0010 ||
