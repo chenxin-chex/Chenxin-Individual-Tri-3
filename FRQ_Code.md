@@ -10,3 +10,9 @@
 ![image](https://user-images.githubusercontent.com/55467785/164585932-06150b19-2d5f-479d-881e-92aa89e811d3.png)
 
 ![image](https://user-images.githubusercontent.com/55467785/164585970-57047967-5486-45c1-b985-fe7f4de055bc.png)
+
+### 2020 FRQ [(Replit)](https://replit.com/@chenxinNi/2020FRQ#Main.java)
+![image](https://user-images.githubusercontent.com/55467785/166506313-8ea2a903-602b-4916-87c2-9734974572b0.png)
+
+![image](https://user-images.githubusercontent.com/55467785/166506353-78938717-0a1f-4504-8e5f-5ddd17f5ca6b.png)
+
